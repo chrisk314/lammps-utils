@@ -2,6 +2,21 @@
 
 Utilities for converting data to and from LAMMPS dump formats.
 
+### Installation
+
+Just clone and pip install as below:
+
+```bash
+git clone git@github.com:chrisk314/lammps-utils.git
+cd lammps-utils
+pip install -e .
+```
+
+Installing in develop mode allows you to add your own custom dump loader functions. See the
+docstrings! ;-)
+
+### Loading data from a dump file
+
 Data can be loaded from a specified LAMMPS dump file using the `load_from_dump_file` function .
 
 ```python
