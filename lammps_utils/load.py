@@ -10,6 +10,11 @@ class DumpLoaderError(Exception):
     pass
 
 
+def as_ndarray(array):
+    """Return ndarray representation of a structured array."""
+    return array.view((np.float64, len(array.dtype.names)))
+
+
 def proc_str(s):
     """Return string stripped of whitespace and lowercase"""
     return s.strip().lower()
